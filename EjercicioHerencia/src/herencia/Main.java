@@ -11,6 +11,10 @@ public class Main {
 		ExcursionBuceo excursionBuceo=new ExcursionBuceo ("1", Destino.PLAYA, 1, 150, 10, true, 30, true );
 		System.out.println(excursionBuceo.toString());
 		System.out.println(excursionBuceo.calcularPrecio());
+		
+		ExcursionAventura excursionAventura=new ExcursionAventura ("1", Destino.PLAYA, 1, 150, 10, "aventura", Dificultad.MEDIO);
+		System.out.println(excursionAventura.toString());
+		System.out.println(excursionAventura.calcularPrecio());
 	}
 
 }
