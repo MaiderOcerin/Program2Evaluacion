@@ -20,7 +20,14 @@ public class Soldado extends Personaje {
 		
 	}
 	@Override
-	public void recibirDanio() {
-		
+	public void recibirDanio(int cantidad) {
+		if (this.arma.equalsIgnoreCase("lanza") && armadura>5) {
+			this.armadura=armadura-5;
+			System.out.println("te quedan " + armadura + " puntos de armadura");
+		}else if (this.arma.equalsIgnoreCase("espada larga") && armadura>6) {
+			this.armadura=armadura-6;
+			System.out.println("te quedan " + armadura + " puntos de armadura");
+		}else
+			System.out.println("Ya no tienes armadura y Se ha restado una vida");
 	}
 }
